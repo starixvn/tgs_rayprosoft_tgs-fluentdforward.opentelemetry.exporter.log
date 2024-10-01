@@ -22,7 +22,9 @@ unit-test:
 push-nuget:
   extends: .push-nuget-template
   script:
-    - push_package "Tgs.Core.FluentdForward.OpenTelemetry"
+    - dotnet pack FluentdForward.OpenTelemetry.Exporter.Logs/FluentdForward.OpenTelemetry.Exporter.Logs.csproj --no-build --no-restore
+    - dotnet nuget push FluentdForward.OpenTelemetry.Exporter.Logs/bin/$BuildConfiguration/*.nupkg -s raypro-baget -k $NugetApiKey --skip-duplicate
+
   artifacts:
     paths:
-      - Tgs.Core.FluentdForward.OpenTelemetry/bin/$BuildConfiguration/*.nupkg
+      - FluentdForward.OpenTelemetry.Exporter.Logs/bin/$BuildConfiguration/*.nupkg
