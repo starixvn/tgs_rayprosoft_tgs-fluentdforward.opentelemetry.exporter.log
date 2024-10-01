@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net6.0;netstandard2.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion Condition="'$(TargetFramework)'=='net6.0' or '$(TargetFramework)'=='netstandard2.0'">10</LangVersion>
+		<Version>0.3.8</Version>
+		<Authors>Phoenix</Authors>
+		<Company>Valhalla</Company>
+		<Copyright>Copyright © 2021 Phoenix</Copyright>
+		<PackageProjectUrl>https://github.com/yggdrasill-dev/FluentdForward.OpenTelemetry.Exporter.Log</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/yggdrasill-dev/FluentdForward.OpenTelemetry.Exporter.Log.git</RepositoryUrl>
+		<PackageTags>OpenTelemetry Fluentd</PackageTags>
+		<Description>Fluentd Forward for OpenTelemetry Log.</Description>
+		<IsPackable>true</IsPackable>
+		<PackageId>FluentdForward.OpenTelemetry.Exporter.Logs</PackageId>
+		<RootNamespace>FluentdForward.OpenTelemetry.Exporter.Logs</RootNamespace>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="OpenTelemetry" Version="1.8.0" />
+	</ItemGroup>
+
+</Project>

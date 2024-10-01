@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net6.0;netstandard2.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion Condition="'$(TargetFramework)'=='net6.0' or '$(TargetFramework)'=='netstandard2.0'">10</LangVersion>
+		<Version>0.3.9-alpha</Version>
+		<Authors>Phoenix</Authors>
+		<Company>Valhalla</Company>
+		<Copyright>Copyright © 2021 Phoenix</Copyright>
+		<PackageProjectUrl>https://github.com/yggdrasill-dev/FluentdForward.OpenTelemetry.Exporter.Log</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/yggdrasill-dev/FluentdForward.OpenTelemetry.Exporter.Log.git</RepositoryUrl>
+		<PackageTags>OpenTelemetry Fluentd MessagePack</PackageTags>
+		<Description>FluentdFroward.OpenTelemetry.Exporter.Log MessagePack Serializer.</Description>
+		<IsPackable>true</IsPackable>
+		<RootNamespace>FluentdForward.OpenTelemetry.MessagePack</RootNamespace>
+		<PackageId>FluentdForward.OpenTelemetry.MessagePack</PackageId>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MessagePack" Version="2.5.140" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\FluentdForward.OpenTelemetry.Exporter.Logs\FluentdForward.OpenTelemetry.Exporter.Logs.csproj" />
+	</ItemGroup>
+
+</Project>
+ 
