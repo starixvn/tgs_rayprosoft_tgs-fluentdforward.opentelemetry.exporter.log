@@ -23,8 +23,8 @@ push-nuget:
   extends: .push-nuget-template
   script:
     - dotnet pack FluentdForward.OpenTelemetry.Exporter.Logs/FluentdForward.OpenTelemetry.Exporter.Logs.csproj --no-build --no-restore
-    - dotnet nuget push FluentdForward.OpenTelemetry.Exporter.Logs/bin/$BuildConfiguration/*.nupkg -s raypro-baget -k $NugetApiKey --skip-duplicate
+    - dotnet nuget push FluentdForward.OpenTelemetry.Exporter.Logs/bin/Release/*.nupkg -s raypro-baget -k $NugetApiKey --skip-duplicate
 
   artifacts:
     paths:
-      - FluentdForward.OpenTelemetry.Exporter.Logs/bin/$BuildConfiguration/*.nupkg
+      - FluentdForward.OpenTelemetry.Exporter.Logs/bin/Release/*.nupkg
