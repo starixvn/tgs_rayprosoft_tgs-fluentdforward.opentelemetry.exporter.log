@@ -30,4 +30,4 @@ push-nuget:
 push-docker-image:
   extends: .push-docker-image-template
   script:
-    - push_docker "tgs-fluentdforward.opentelemetry.exporter.logs"
+    - push_docker "FluentdForward.OpenTelemetry.Exporter.Logs"
