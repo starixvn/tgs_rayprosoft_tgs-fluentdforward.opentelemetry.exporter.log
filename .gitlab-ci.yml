@@ -22,12 +22,9 @@ unit-test:
 push-nuget:
   extends: .push-nuget-template
   script:
+    - echo "projectFolder=$projectFolder"
     - dotnet pack FluentdForward.OpenTelemetry.Exporter.Logs/FluentdForward.OpenTelemetry.Exporter.Logs.csproj --no-restore --configuration Release
+    - dotnet nuget push "$projectFolder/bin/$BuildConfiguration/*.nupkg" -s "raypro-baget" -k $NugetApiKey --skip-duplicate
   artifacts:
     paths:
       - FluentdForward.OpenTelemetry.Exporter.Logs/bin/Release/*.nupkg
-
-push-docker-image:
-  extends: .push-docker-image-template
-  script:
-    - push_docker "FluentdForward.OpenTelemetry.Exporter.Logs"
