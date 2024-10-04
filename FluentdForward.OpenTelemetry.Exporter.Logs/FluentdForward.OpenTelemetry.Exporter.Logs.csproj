@@ -7,10 +7,10 @@
 		<LangVersion Condition="'$(TargetFramework)'=='net6.0' or '$(TargetFramework)'=='netstandard2.0'">10</LangVersion>
 		<Version>0.3.8</Version>
 		<Authors>Phoenix</Authors>
-		<Company>Valhalla</Company>
-		<Copyright>Copyright © 2021 Phoenix</Copyright>
-		<PackageProjectUrl>https://github.com/yggdrasill-dev/FluentdForward.OpenTelemetry.Exporter.Log</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/yggdrasill-dev/FluentdForward.OpenTelemetry.Exporter.Log.git</RepositoryUrl>
+		<Company>Raypro</Company>
+		<Copyright>Copyright © 2024 Lester</Copyright>
+		<PackageProjectUrl>https://gitlab.com/rayprosoft/tgs-fluentdforward.opentelemetry.exporter.log</PackageProjectUrl>
+		<RepositoryUrl>https://gitlab.com/rayprosoft/tgs-fluentdforward.opentelemetry.exporter.log.git</RepositoryUrl>
 		<PackageTags>OpenTelemetry Fluentd</PackageTags>
 		<Description>Fluentd Forward for OpenTelemetry Log.</Description>
 		<IsPackable>true</IsPackable>
