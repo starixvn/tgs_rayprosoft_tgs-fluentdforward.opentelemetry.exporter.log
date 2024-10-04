@@ -4,12 +4,12 @@
 		<TargetFrameworks>net8.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<Version>0.4.0</Version>
+		<Version>0.4.1</Version>
 		<Authors>Phoenix</Authors>
 		<Company>Raypro</Company>
 		<Copyright>Copyright © 2024 Lester</Copyright>
-		<PackageProjectUrl>https://github.com/yggdrasill-dev/FluentdForward.OpenTelemetry.Exporter.Log</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/yggdrasill-dev/FluentdForward.OpenTelemetry.Exporter.Log.git</RepositoryUrl>
+		<PackageProjectUrl>https://gitlab.com/rayprosoft/tgs-fluentdforward.opentelemetry.exporter.log</PackageProjectUrl>
+		<RepositoryUrl>https://gitlab.com/rayprosoft/tgs-fluentdforward.opentelemetry.exporter.log.git</RepositoryUrl>
 		<PackageTags>OpenTelemetry Fluentd MessagePack</PackageTags>
 		<Description>FluentdFroward.OpenTelemetry.Exporter.Log MessagePack Serializer.</Description>
 		<IsPackable>true</IsPackable>

@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<LangVersion Condition="'$(TargetFramework)'=='net6.0' or '$(TargetFramework)'=='netstandard2.0'">10</LangVersion>
-		<Version>0.4.0</Version>
+		<Version>0.4.1</Version>
 		<Authors>Phoenix</Authors>
 		<Company>Raypro</Company>
 		<Copyright>Copyright © 2024 Lester</Copyright>
