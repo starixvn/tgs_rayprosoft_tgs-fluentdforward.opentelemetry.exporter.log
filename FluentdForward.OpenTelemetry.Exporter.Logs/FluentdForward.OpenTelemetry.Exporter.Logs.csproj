@@ -17,6 +17,7 @@
 		<PackageId>FluentdForward.OpenTelemetry.Exporter.Logs</PackageId>
 		<RootNamespace>FluentdForward.OpenTelemetry.Exporter.Logs</RootNamespace>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<AssemblyVersion>0.4.0.0</AssemblyVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
