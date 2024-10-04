@@ -22,9 +22,7 @@ unit-test:
 push-nuget:
   extends: .push-nuget-template
   script:
-    - echo "projectFolder=$projectFolder"
     - dotnet pack FluentdForward.OpenTelemetry.Exporter.Logs/FluentdForward.OpenTelemetry.Exporter.Logs.csproj --no-restore --configuration Release
+    - dotnet pack FluentdForward.OpenTelemetry.MessagePack/FluentdForward.OpenTelemetry.MessagePack.csproj --no-restore --configuration Release
     - dotnet nuget push FluentdForward.OpenTelemetry.Exporter.Logs/bin/Release/*.nupkg -s "raypro-baget" -k $NugetApiKey --skip-duplicate
-  artifacts:
-    paths:
-      - FluentdForward.OpenTelemetry.Exporter.Logs/bin/Release/*.nupkg
+    - dotnet nuget push FluentdForward.OpenTelemetry.MessagePack/bin/Release/*.nupkg -s "raypro-baget" -k $NugetApiKey --skip-duplicate
